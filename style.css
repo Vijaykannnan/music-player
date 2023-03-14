@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10%;
+}
+
+.box {
+  max-width: 60%;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.songs {
+  width: 100%;
+  padding: 5px;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.songs h1 {
+  color: tomato;
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+
+.songs img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.songs p {
+  color: aliceblue;
+  text-align: center;
+
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 25px;
+}
+
+marquee {
+  color: #fff;
+  font-weight: 200;
+  font-size: 14px;
+  width: 200px;
+}
+
+.song-timing {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -11px;
+}
+
+.song-timing p {
+  font-size: 12px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.buttons button {
+  padding: 13px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background: tomato;
+  color: #fff;
+  outline: none;
+}
+
+/* default ah range ku irukura property vandam so */
+#track {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+#track::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 1px;
+  height: 20px;
+  box-shadow: -400px 0 0 400px tomato;
+
+}
+
+/* medai queries */
+
+@media all and (max-width: 430px) {
+  .songs img {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media all and (max-width: 380px) {
+  .songs img {
+    width: 160px;
+    height: 180px;
+  }
+}
+
+@media all and (max-width: 360px) {
+  .songs img {
+    width: 120px;
+    height: 150px;
+  }
+}

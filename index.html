@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music Player</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- title kuda icon add aga etha use pantran -->
+  <link rel="icon" href="images/u1.jpeg" />
+
+  <!--fontawesome link-->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="box">
+      <div class="songs">
+        <h1>Musics</h1>
+        <img id="image" src="" />
+
+        <p class="title"></p>
+        <marquee class="content"></marquee>
+
+        <div class="audios">
+          <audio id="audio" loop></audio>
+          <input type="range" id="track" value="0" min="0" max="100" />
+        </div>
+        <div class="song-timing">
+          <p class="firstval">0.00</p>
+          <p class="secondval">0.00</p>
+        </div>
+
+        <div class="buttons">
+          <button onclick="prev()"><i class="fas fa-backward"></i></button>
+          <button onclick="stop()" id="changeIcon"></button>
+          <button onclick="next()"><i class="fas fa-forward"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
